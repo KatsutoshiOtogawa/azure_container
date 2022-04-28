@@ -1,0 +1,17 @@
+# Top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+# indent_size intentionally not specified in this section
+indent_style = space
+insert_final_newline = true
+
+# Source code
+[*.{ps1,psd1,psm1}]
+indent_size = 4
+
+# Markdown
+[*.md]
+indent_size = 2
