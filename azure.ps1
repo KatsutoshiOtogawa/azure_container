@@ -61,7 +61,7 @@ function set_azure_acr_for_github {
         az acr list --query "[].{Name:name}" | ConvertFrom-Json | Set-Variable acr_list -Scope local
 
         # get contaier registry name
-        New-Variable acr_name -Scope local
+        New-Variable acr -Scope local
         while ($true) {
             Write-Output $acr_list | Out-String | Out-Host
             read-host "Type you use acr_name >" | Set-Variable select_name -Scope local
